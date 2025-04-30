@@ -1,7 +1,3 @@
-Here’s a polished and more professional version of your **Video Editing Platform** README with an improved structure, clearer instructions, and better formatting:
-
----
-
 # 🎬 Video Editing Platform
 
 A modern, web-based **video editing tool** built with **Next.js**, enabling users to upload videos, add subtitles, manage audio, and apply image/text overlays — all from the browser.
