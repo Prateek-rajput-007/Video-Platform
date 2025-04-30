@@ -1,6 +1,3 @@
-Thanks! Here's an updated and **fully structured README** including your actual project folder layout and a better-organized guide for developers:
-
----
 
 # 🎬 Video Editing Platform
 
