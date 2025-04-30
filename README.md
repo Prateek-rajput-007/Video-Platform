@@ -1,29 +1,75 @@
-# 🎬 Video Editing Platform
-
-A modern, web-based **video editing tool** built with **Next.js**, enabling users to upload videos, add subtitles, manage audio, and apply image/text overlays — all from the browser.
+Thanks! Here's an updated and **fully structured README** including your actual project folder layout and a better-organized guide for developers:
 
 ---
 
-## ✨ Features
+# 🎬 Video Editing Platform
 
-- 🎥 **Video Upload** – Drag-and-drop functionality for easy import
-- ✂️ **Timeline Editor** – Rearrange scenes and control timing
-- 🔊 **Audio Management** – Add tracks with waveform visualization
-- 📝 **Subtitle Editor** – Insert, style, and position text overlays
-- 🖼️ **Image Overlays** – Drag and position images on video
-- 👀 **Live Preview** – Real-time feedback on all edits
-- 💾 **Mock Rendering & Download** – Simulated video export for testing
+A powerful, browser-based video editor built with **Next.js**. This platform allows users to upload videos, edit timelines, overlay subtitles and images, manage audio tracks, and preview edits in real-time — all with an intuitive UI and zero desktop software.
+
+---
+
+## 📸 Screenshot
+![Screenshot 2025-04-30 213918](https://github.com/user-attachments/assets/ff314544-a066-4e51-acd6-42ff7980fa6c)
+
+---
+
+## ✨ Key Features
+
+- 🎥 **Video Upload** – Drag-and-drop support for intuitive importing  
+- ✂️ **Timeline Control** – Rearrange scenes & manage video flow  
+- 🔊 **Audio Waveform** – Sync and visualize audio tracks  
+- 📝 **Subtitles** – Add, style, and align captions  
+- 🖼️ **Image Overlays** – Drag-and-position images dynamically  
+- 👀 **Live Preview** – Real-time rendering of all changes  
+- 💾 **Mock Render & Download** – Simulated exporting for final testing
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js (App Router)
-- **UI & Styling:** Tailwind CSS, ShadCN UI
-- **State Management:** React Context API + `useReducer`
-- **File Handling:** React Dropzone + React DnD
-- **Media Playback:** React Player
-- **Icons:** Lucide React
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **UI Components**: [ShadCN UI](https://ui.shadcn.com/), Tailwind CSS  
+- **State Management**: React Context API with `useReducer`  
+- **Drag & Drop**: React Dropzone, React DnD  
+- **Media Player**: React Player  
+- **Icons**: Lucide React
+
+---
+
+## 📁 Project Structure
+
+```
+/video-editor
+├── /app
+│   ├── /components
+│   │   ├── /ui               # ShadCN-based reusable UI
+│   │   │   ├── button.js
+│   │   │   ├── dialog.js
+│   │   │   ├── progress.js
+│   │   │   ├── tabs.js
+│   │   │   ├── toast.js
+│   │   ├── AudioWaveform.js
+│   │   ├── ImageOverlayControls.js
+│   │   ├── SubtitleControls.js
+│   │   ├── Timeline.js
+│   │   ├── VideoPlayer.js
+│   │   ├── VideoUpload.js
+│   ├── /context
+│   │   ├── EditorContext.js
+│   ├── /lib
+│   │   ├── utils.js
+│   ├── /styles
+│   │   ├── globals.css
+│   ├── layout.js
+│   ├── page.js
+├── /public
+│   ├── favicon.ico
+│   ├── placeholder.jpg
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+├── postcss.config.js
+```
 
 ---
 
@@ -31,46 +77,30 @@ A modern, web-based **video editing tool** built with **Next.js**, enabling user
 
 ### ✅ Prerequisites
 
-- Node.js (v18 or later)
-- npm or yarn
+- **Node.js** (v18+)
+- **npm** or **yarn**
 
 ### 📦 Installation
-
-Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/yourusername/video-editor.git
 cd video-editor
-npm install     # or yarn install
+npm install   # or yarn
 ```
 
-### 🔧 Run the Development Server
+### 🧪 Run in Development Mode
 
 ```bash
-npm run dev     # or yarn dev
+npm run dev   # or yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📂 Project Structure
+## 🧠 Future Enhancements
 
-```
-video-editor/
-├── public/                  # Static assets (images, videos)
-├── components/              # Reusable UI components
-├── context/                 # Global state (React Context)
-├── pages/ or app/           # Next.js pages or App Router
-├── styles/                  # Tailwind + custom styles
-├── utils/                   # Helper functions
-├── package.json             # Project metadata and scripts
-```
-
----
-
-## 🧪 Future Improvements
-
-- Export edited videos with ffmpeg.wasm
-- User accounts and persistent projects
-- AI-powered subtitle generation
+- 🎞️ Export edited video using `ffmpeg.wasm`
+- 🧠 AI-generated subtitles (e.g., Whisper integration)
+- 🌐 User authentication and project persistence (Supabase/Firebase)
+- ⬆️ Cloud storage integration (S3, Cloudinary)
