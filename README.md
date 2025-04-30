@@ -2,8 +2,6 @@
 
 A modern, web-based **video editing tool** built with **Next.js**, enabling users to upload videos, add subtitles, manage audio, and apply image/text overlays — all from the browser.
 
-![Video Editor Screenshot](/public/screenshot.png)
-
 ---
 
 ## ✨ Features
